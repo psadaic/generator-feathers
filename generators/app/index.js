@@ -230,7 +230,7 @@ module.exports = generators.Base.extend({
       this.props.localAuth = false;
 
       if (this.props.authentication.length) {
-        this.dependencies.push('feathers-authentication@^0.4.0');
+        this.dependencies.push('feathers-authentication@^0.7.0');
         this.dependencies.push('passport');
 
         this.props.authentication = this.props.authentication.filter(function(provider) {
@@ -407,7 +407,7 @@ module.exports = generators.Base.extend({
       case 'mariadb':
       case 'postgres':
         this.log('Make sure that your ' + this.props.database +
-          ' database is running. The username/role is correct and the database ' 
+          ' database is running. The username/role is correct and the database '
           + this.props.databaseName + ' has been created. Default information can be found in the projects config folder.');
         break;
     }
