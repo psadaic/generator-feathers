@@ -63,6 +63,10 @@ module.exports = generators.Base.extend({
           {
             name: 'Sequelize',
             value: 'sequelize'
+          },
+          {
+            name: 'Thinky',
+            value: 'thinky'
           }
         ]
       }
